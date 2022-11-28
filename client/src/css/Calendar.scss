@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+$primary-color: rgb(56, 56, 56);
+$background-body:  #15171a;
+$backgroun-black: #212529;
+$border-color: #484848;
+$today-color: #212529;
+$out-of-range: rgb(14, 14, 14);
+$text-color: rgb(192, 192, 192);
+$event-border-color: rgb(219, 183, 0);
+$background-event: rgb(0, 8, 77);
+$font-stack: 'PT Sans', sans-serif;
+$rounded: 7px;
+*{
+  margin: 0;
+  padding: 0;
+}
+.calendar {
+    
+    border: 2px solid $border-color;
+    border-radius: 6px;
+    padding: 10px;
+    font-family: 'PT Sans', sans-serif;
+    background-color: $background-body;
+    color: $text-color;
+  }
+  
+  .calendar .rbc-off-range-bg {
+    background-color: $border-color;
+  }
+  
+  .calendar .rbc-date-cell {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  
+  .calendar .rbc-month-view {
+    border: 2px solid $border-color;
+  }
+  
+  .calendar .rbc-day-bg + .rbc-day-bg {
+    border: 1px solid $border-color;
+  }
+  
+  .calendar row {
+    border: 1px solid $border-color;
+  }
+  
+  .calendar .rbc-month-row + .rbc-month-row {
+    border-top: 1px solid $border-color;
+  }
+  
+  .calendar .rbc-date-cell > a {
+    font-size: 10px;
+  }
+  
+  .calendar .rbc-event {
+    background-color: $background-event;
+    border-radius: 0;
+    color: $text-color;
+    border: none !important;
+    border-left: 2px solid $event-border-color !important; 
+    margin-left: -1px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .calendar .rbc-today {
+    background-color: $today-color;
+  }
+  
+  .calendar .rbc-header + .rbc-header {
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .calendar .rbc-header {
+    font-weight: 400;
+    color: #b3b3b3;
+  }
+  
+  .Popover-tip {
+    fill: $background-event;
+    stroke: $event-border-color;
+    stroke-width: 2px;
+  }
+  
+  .Popover-body {
+    border: 2px solid $border-color;
+    padding: 10px 5px;
+    color: $text-color;
+    background-color: $backgroun-black;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .Popover, .ReactModal__Overlay{
+    z-index: 1000;
+  }
+  .calendar .rbc-off-range-bg {
+    background-color: $out-of-range;
+  }
+  // .calendar .rbc-header{
+  //   border-color: $border-color;
+  // }
+.calendar .rbc-btn-group>button{
+    color: $text-color;
+    background-color: $border-color;
+    border-color: $border-color;
+}
+.calendar .rbc-time-view {
+  border-color: $border-color;
+}
+ .calendar .rbc-events-container{
+  border-color: $border-color;
+ }
+ .calendar .rbc-timeslot-group{
+  border-color: $border-color;
+ }
+ .calendar .rbc-time-slot{
+  border-color: $border-color;
+ }
+ .calendar .rbc-day-slot {
+  border-color: $border-color;
+ }
+ .calendar .rbc-time-column{
+  border-color: $border-color;
+ }
+ 
+ .calendar .rbc-day-bg{
+  border-color: $border-color;
+ }
+ .calendar .rbc-day-slot .rbc-time-slot{
+  border-color: $border-color;
+ }
+ .calendar .rbc-time-content{
+  border-color: $border-color;
+ }
+ 
+ .rbc-time-content::-webkit-scrollbar {
+  width: 5px;              
+}
+.rbc-time-content::-webkit-scrollbar-track {
+  background: $background-body;       
+}
+
+.rbc-time-content::-webkit-scrollbar-thumb {
+  background-color: $primary-color;  
+  border-radius: 10px;   
+}
+.calendar .rbc-time-view .rbc-overflowing{
+  margin-right: 3px !important;
+
+}
+.calendar div{
+  margin-right: 0px;
+}
+.rbc-current-time-indicator{
+  background-color: rgb(15, 232, 113) !important;
+}
+.rbc-agenda-table{
+  border-color: $border-color !important;
+}
+.rbc-agenda-table{
+  border-color: $border-color !important;
+}
+.rbc-header{
+  border-color: $border-color !important;
+}
+.rbc-agenda-date-cell{
+  border-color: $border-color !important;
+}
+.rbc-agenda-time-cell{
+  border-color: $border-color !important;
+}
+.rbc-agenda-event-cell{
+  border-color: $border-color !important;
+}
+.rbc-agenda-table{
+  border-color: $border-color !important;
+}
+.rbc-active{
+  background-color: $backgroun-black !important;
+  color: $text-color !important;
+  border-color: $backgroun-black !important;
+}
+.rbc-btn-group >button:hover{
+  background-color: $backgroun-black !important;
+  border-color: $backgroun-black !important;
+  color: $text-color !important;
+}
+.ReactModal__Overlay--after-open{
+  background-color: #15171ac7 !important;
+}
+.ReactModal__Content{
+  background-color: $background-body !important;
+  color: $text-color !important;
+  border-color: $border-color !important;
+}
+.react-datepicker__input-container > input{
+  background-color: $backgroun-black !important;
+  border: none !important;
+  border-radius:$rounded !important;
+  color: $text-color !important;
+  width: 100% !important;
+  text-align: left !important;
+  padding: 5px !important;
+  border: 2px solid $border-color !important;
+}
+.column > input[type="text"]{
+  background-color: $backgroun-black !important;
+  border: none !important;
+  border-radius:$rounded !important;
+  color: $text-color !important;
+  width: 100% !important;
+  text-align: left !important;
+  padding: 5px !important;
+  border: 2px solid $border-color !important;
+}
+.column > textarea {
+  background-color: $backgroun-black !important;
+  border: none !important;
+  border-radius: $rounded !important;
+  color: $text-color !important;
+  width: 100% !important;
+  text-align: left !important;
+  padding: 5px !important;
+  border: 2px solid $border-color !important;
+}
+// .column > input[type="submit"]{
+//   background-color: $border-color !important;
+//   border: 1px solid $border-color !important;
+// }
+.row{
+  margin-top: 5px !important;
+}
+.column{
+  margin-top: 5px !important;
+}
+.column > textarea::-webkit-scrollbar {
+    width: 5px;            
+}
+.column > textarea::-webkit-scrollbar-track {
+  background: $background-body;         
+  }
+  
+  .column > textarea::-webkit-scrollbar-thumb {
+    background-color: $primary-color;  
+  border-radius: 10px;     
+}
+
+// checkbox
+
+.app {
+  font-family: sans-serif;
+  font-size: 18px;
+  // display: flex;
+  // align-items: center;
+  justify-content: center;
+  // flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+  position: absolute; 
+  right: 0px;
+}
+.title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+.checked-item,
+.not-checked-item {
+  margin-left: 10px;
+}
+.checked-item {
+  text-decoration: line-through;
+}
+#react-select-22-input{
+  color: white !important;
+}
